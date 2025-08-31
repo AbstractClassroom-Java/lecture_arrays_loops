@@ -7,7 +7,7 @@ import java.util.ArrayList;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Nathan {
     public static void main(String[] args) {
-        int[] arrayOfInts = {5,4,7,2};
+        int[] arrayOfInts = {5, 4, 7, 2};
         String[] arrayOfStrings = {"Hello", "My Name Is Nathan", "Good Bye"};
 
         int i = 0;
@@ -17,7 +17,7 @@ public class Nathan {
             i++;
         }
 
-        for (int k = 0; k< arrayOfStrings.length; k++) {
+        for (int k = 0; k < arrayOfStrings.length; k++) {
             System.out.println(arrayOfStrings[k]);
         }
 
@@ -26,7 +26,7 @@ public class Nathan {
         }
 
         int[] newArrayOfInts = new int[10];
-        for (int k=0; k < newArrayOfInts.length; k++) {
+        for (int k = 0; k < newArrayOfInts.length; k++) {
             newArrayOfInts[k] = k;
         }
 
@@ -57,35 +57,28 @@ public class Nathan {
 //        }
 
         i = 100;
-        while (i<110) {
+        while (i < 110) {
             System.out.println(i++);
         }
 
-        ArrayList<String> dynamicStringArray = new ArrayList<>();
-        dynamicStringArray.add("My Name Is Nathan");
-        dynamicStringArray.add("My Last Name Is Russell");
-        dynamicStringArray.add("My Friend Is Sam");
+        ArrayList<String> dynamicArrayOfStrings = new ArrayList<>();
+        dynamicArrayOfStrings.add("My Name Is Nathan");
+        dynamicArrayOfStrings.add("My last name is Russell");
+        dynamicArrayOfStrings.add("My friend is Sam");
 
-        for (String phrase : dynamicStringArray) {
+        for (String phrase : dynamicArrayOfStrings) {
             System.out.println(phrase);
         }
 
-        dynamicStringArray.remove(1);
-
-        for (String phrase : dynamicStringArray) {
+        dynamicArrayOfStrings.remove(1);
+        for (String phrase : dynamicArrayOfStrings) {
             System.out.println(phrase);
         }
 
-        for (int k=0; k < dynamicStringArray.size(); k++ ) {
-            System.out.println(dynamicStringArray.get(k));
-        }
+        dynamicArrayOfStrings.replaceAll(s -> s + "!");
 
-        ArrayList<Integer> dynamicArrayOfInts = new ArrayList<>();
-        dynamicArrayOfInts.add(6);
-        dynamicArrayOfInts.add(7);
-
-        for (Integer value : dynamicArrayOfInts) {
-            System.out.println(value);
+        for (String dynamicArrayOfString : dynamicArrayOfStrings) {
+            System.out.println(dynamicArrayOfString);
         }
     }
 }
